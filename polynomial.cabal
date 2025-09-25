@@ -42,6 +42,7 @@ Library
                         Math.Polynomial.Legendre
                         Math.Polynomial.Newton
                         Math.Polynomial.NumInstance
+                        Math.Polynomial.Rational
                         Math.Polynomial.Type
                         Math.Polynomial.VectorSpace
   other-modules:        Data.List.ZipSum
