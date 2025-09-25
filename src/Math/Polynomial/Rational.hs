@@ -16,7 +16,7 @@ data RationalPoly a = RationalPoly
     , denominator :: Poly a
     }
 
-instance Fractional a => Show (RationalPoly a) where
+instance (Show a,Eq a, Fractional a) => Show (RationalPoly a) where
     showsPrec prec (reduce -> RationalPoly _ p q) = showParen (prec > 7)
         ( showsPrec 7 p
         . showString " % " 
